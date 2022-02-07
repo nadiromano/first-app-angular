@@ -1,0 +1,11 @@
+<ngprj-project-list
+  [projects]="projects"
+  (selected)="selectProject($event)"
+></ngprj-project-list>
+
+<ngprj-project-details [project]="selectedProject"></ngprj-project-details>
+
+<hr />
+<ngprj-project-form
+  (submitted)="submitProjectForm($event)"
+></ngprj-project-form>
